@@ -15,3 +15,5 @@ Você pode visualizar o projeto na prática através do link abaixo:
 * **Mobile First:** Totalmente otimizado para navegação em dispositivos móveis.
 * **Lista de pokémons:** Todos os pokémons de todas as gerações.
 
+
+​"Projeto desenvolvido sob orientação do mentor @RenanJPaula na DIO."
