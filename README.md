@@ -16,4 +16,6 @@ Você pode visualizar o projeto na prática através do link abaixo:
 * **Lista de pokémons:** Todos os pokémons de todas as gerações.
 
 
-​"Projeto desenvolvido sob orientação do mentor @RenanJPaula na DIO."
+​## 👨‍🏫 Mentor
+Projeto desenvolvido com as orientações do mentor **@RenanJPaula**.
+
