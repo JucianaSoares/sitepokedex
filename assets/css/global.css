@@ -1,0 +1,38 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.content h1{
+  font-family: 'Pokemon Solid', sans-serif;
+  color: #FFCB05;
+  text-shadow: 
+        -2px -2px 0 #3C5AA6,  
+         2px -2px 0 #3C5AA6,
+        -2px  2px 0 #3C5AA6,
+         2px  2px 0 #3C5AA6,
+         4px  4px 0 #2A4494; /* Sombra um pouco mais escura para dar relevo */
+         
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

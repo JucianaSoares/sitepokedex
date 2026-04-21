@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+  
+<link rel="stylesheet" href="assets/css/global.css">
+
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    </head>
+
+<body>
+  
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Buscar Pokémon pelo nome...">
+</div>
+
+<div id="loading-spinner" class="spinner-container" style="display: none;">
+    <img src="/assets/img/pokebola.png" alt="Carregando..." class="pokeball-spinner">
+    <p>Buscando na Pokedex...</p>
+</div>
+
+
+<div class="filter-container">
+    <label for="type-select">Filtrar por tipo:</label>
+    <select id="type-select" onchange="filterByType(this.value)">
+        <option value="all">Todos os tipos</option>
+        <option value="grass">Grama</option>
+        <option value="fire">Fogo</option>
+        <option value="water">Água</option>
+        <option value="electric">Elétrico</option>
+        <option value="ice">Gelo</option>
+        <option value="ground">Terra</option>
+        <option value="flying">Voador</option>
+        <option value="poison">Venenoso</option>
+        <option value="fighting">Lutador</option>
+        <option value="psychic">Psíquico</option>
+        <option value="dark">Sombrio</option>
+        <option value="rock">Pedra</option>
+        <option value="bug">Inseto</option>
+        <option value="ghost">Fantasma</option>
+        <option value="steel">Aço</option>
+        <option value="dragon">Dragão</option>
+        <option value="fairy">Fada</option>
+    </select>
+</div>
+
+      <section class="content">
+        <h1>Pokedex</h1>
+
+        <ol id="pokemonList" class="pokemons">
+            <!-- ..... Pokemons here ..... -->
+        </ol>
+
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+    </section>
+
+<div id="modal-overlay" class="modal-overlay">
+    <div id="pokemon-modal" class="modal-content">
+        <span id="close-modal">&times;</span>
+        <div id="modal-body">
+            </div>
+    </div>
+</div>
+
+
+    <!-- Nosso JS -->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+  
+<script src="assets/js/main.js"></script>
+</body>
+</html>
